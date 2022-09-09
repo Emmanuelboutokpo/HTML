@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+
+		<title>Car Details - Just Move</title>
+<!-- 		<link rel="shortcut icon" href="assets/images/logo/favourite_icon.png">
+ -->
+		<!-- fraimwork - css include -->
+		<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+
+		<!-- icon - css include -->
+		<link rel="stylesheet" type="text/css" href="assets/css/fontawesome.css">
+
+		<!-- animation - css include -->
+		<link rel="stylesheet" type="text/css" href="assets/css/aos.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/animate.css">
+
+		<!-- carousel - css include -->
+		<link rel="stylesheet" type="text/css" href="assets/css/slick.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/slick-theme.css">
+
+		<!-- popup - css include -->
+		<link rel="stylesheet" type="text/css" href="assets/css/magnific-popup.css">
+
+		<!-- select options - css include -->
+		<link rel="stylesheet" type="text/css" href="assets/css/nice-select.css">
+
+		<!-- pricing range - css include -->
+		<link rel="stylesheet" type="text/css" href="assets/css/jquery-ui.css">
+
+		<!-- custom - css include -->
+		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+	</head>
+
+
+	<body>
+
+
+		<!-- backtotop - start -->
+		<div id="thetop"></div>
+		<div class="backtotop">
+			<a href="#" class="scroll">
+				<i class="far fa-arrow-up"></i>
+			</a>
+		</div>
+		<!-- backtotop - end -->
+
+			<!-- header_section - start
+		================================================== -->
+		<header class="header_section sticky text-white clearfix">
+			<div class="header_bottom clearfix">
+				<div class="container-fluid">
+					<div class="row align-items-center justifie">
+						<div class="col-lg-3 col-md-6 col-sm-6 col-6">
+							<div class="brand_logo">
+								<a href="index.html">JUST MOVE</a>
+							</div>
+						</div>
+						<div class="col-lg-8 col-md-12">
+							<nav class="main_menu clearfix">
+								<ul class="ul_li_center clearfix">
+									<li class="active"><a href="index.html">Accueil</a></li>
+									<li><a href="gallery.html">Nos véhicules</a></li>
+									<li><a href="service.html">Services</a></li>
+									<li><a href="contact_wordwide.html">Contact</a></li>
+									<li><a href="">Ma reservation</a></li>
+								</ul>
+							</nav>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- header_section - end
+		================================================== -->
+
+
+		<!-- main body - start
+		================================================== -->
+		<main>
+
+			<!-- breadcrumb_section - start
+			================================================== -->
+			<section class="breadcrumb_section text-center clearfix">
+				<div class="page_title_area has_overlay d-flex align-items-center clearfix" data-bg-image="https://images.unsplash.com/photo-1619767886558-efdc259cde1a?ixid=MnwyMDkyMnwwfDF8c2VhcmNofDMyM3x8c3V2fGVufDB8fHx8MTYzMTY4Njc4Nw&ixlib=rb-1.2.1q=85&fm=jpg&crop=faces&cs=srgb&w=600&h=450&fit=crop">
+					<div class="overlay"></div>
+					<div class="container">
+						<h1 class="page_title text-white mb-0">Choisissez vos options de voiture</h1>
+					</div>
+				</div>
+				<div class="breadcrumb_nav clearfix" data-bg-color="#F2F2F2">
+					<div class="container">
+						<ul class="ul_li clearfix">
+							<li><a href="index.html">Accueil</a></li>
+							<li><a href="car.html">Nos voitures</a></li>
+							<li>Voiture</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+			<!-- breadcrumb_section - end
+			================================================== -->
+
+
+			<!-- details_section - start
+			================================================== -->
+			<div class="details_section sec_ptb_100 pb-0 clearfix">
+				<div class="container">
+					<div class="row justify-content-lg-between justify-content-md-center justify-content-sm-center">
+
+						<div class="col-lg-4 col-md-8 col-sm-10 col-xs-12">
+							<aside class="filter_sidebar sidebar_section" data-bg-color="#F2F2F2">
+								<div class="sidebar_header" data-bg-gradient="linear-gradient(90deg, #0C0C0F, #292D45)">
+									<h3 class="text-white mb-0">Filtrer</h3>
+								</div>
+								<div class="sb_widget">
+									<form action="#">
+										<div class="sb_widget price-range-area clearfix">
+											<h4 class="input_title">Prix</h4>
+											<div id="slider-range" class="slider-range clearfix"></div>
+											<input class="price-text" type="text" id="amount" readonly>
+										</div>
+
+										<div class="sb_widget car_picking">
+											<div class="form_item">
+												<h4 class="input_title">Le lieu de reservation</h4>
+												<div class="position-relative">
+													<input id="location_two" type="text" name="location" placeholder="Code de la ville, de l'État ou de l'aéroport">
+													<label for="location_two" class="input_icon"><i class="fas fa-map-marker-alt"></i></label>
+												</div>
+											</div>
+
+											<div class="form_item">
+												<h4 class="input_title">La date de reservation</h4>
+												<input type="date" name="date">
+											</div>
+										</div>
+
+										<div class="sb_widget">
+											<div class="checkbox_input">
+												<label for="return_checkbox"><input type="checkbox" id="return_checkbox">Restituer la voiture à un autre endroit</label>
+											</div>
+										</div>
+
+										<div class="sb_widget">
+											<h4 class="input_title">Nombre de passagers:</h4>
+											<div class="row">
+												<div class="col-lg-6">
+													<div class="checkbox_input">
+														<label for="passengers_radio1"><input type="radio" id="passengers_radio1" name="passagers" checked> 2</label>
+													</div>
+												</div>
+												<div class="col-lg-6">
+													<div class="checkbox_input">
+														<label for="passengers_radio2"><input type="radio" id="passengers_radio2" name="passagers"> 5</label>
+													</div>
+												</div>
+												<div class="col-lg-6">
+													<div class="checkbox_input">
+														<label for="passengers_radio3"><input type="radio" id="passengers_radio3" name="passagers"> 4</label>
+													</div>
+												</div>
+												<div class="col-lg-6">
+													<div class="checkbox_input">
+														<label for="passengers_radio4"><input type="radio" id="passengers_radio4" name="passagers"> 7 ou plus</label>
+													</div>
+												</div>
+											</div>
+										</div>
+
+										<div class="sb_widget">
+											<div class="form_item">
+												<select>
+													<option data-display="Type de boîte de vitesses">Selectionner une option</option>
+													<option value="1">Option 1</option>
+													<option value="2">Option 2</option>
+													<option value="3" disabled>Option 3</option>
+													<option value="4">Option 4</option>
+												</select>
+											</div>
+
+											<div class="form_item">
+												<select>
+													<option data-display="Type de carburant">Selectionner une option</option>
+													<option value="1">Option 1</option>
+													<option value="2">Option 2</option>
+													<option value="3" disabled>Option 3</option>
+													<option value="4">Option 4</option>
+												</select>
+											</div>
+
+											<div class="form_item">
+												<select>
+													<option data-display="Options d'espace pour les bagages">Selectionner une option</option>
+													<option value="1">Option 1</option>
+													<option value="2">Option 2</option>
+													<option value="3" disabled>Option 3</option>
+													<option value="4">Option 4</option>
+												</select>
+											</div>
+
+											<div class="form_item">
+												<select>
+													<option data-display="Type de modèle">Selectionner une option</option>
+													<option value="1">Option 1</option>
+													<option value="2">Option 2</option>
+													<option value="3" disabled>Option 3</option>
+													<option value="4">Option 4</option>
+												</select>
+											</div>
+										</div>
+
+										<div class="sb_widget sb_additional_options">
+											<h4 class="input_title">Additional Options:</h4>
+											<div class="checkbox_input">
+												<label for="child_seat"><input type="checkbox" id="child_seat"> Siège d'enfant</label>
+											</div>
+
+											<div class="checkbox_input">
+												<label for="air_conditioning"><input type="checkbox" id="air_conditioning"> Climatisation</label>
+											</div>
+
+											<div class="checkbox_input">
+												<label for="chauffeur_services"><input type="checkbox" id="chauffeur_services"> Services de chauffeur</label>
+											</div>
+
+											<div class="checkbox_input">
+												<label for="winter_equipment"><input type="checkbox" id="winter_equipment"> Équipement d'hiver</label>
+											</div>
+
+											<div class="checkbox_input">
+												<label for="premium_sound_system"><input type="checkbox" id="premium_sound_system">Système audio haut de gamme</label>
+											</div>
+										</div>
+
+										<hr data-aos="fade-up" data-aos-delay="100">
+
+										<div>
+											<button type="submit" class="custom_btn bg_default_red text-uppercase">Effacer les filtres<img src="assets/images/icons/icon_01.png" alt="icon_not_found"></button>
+										</div>
+									</form>
+								</div>
+							</aside>
+						</div>
+					<div class="col-lg-8 col-md-8 col-sm-10 col-xs-12">
+							<div class="car_choose_carousel mb_30 clearfix">
+								<div class="thumbnail_carousel">
+									<div class="item">
+										<div class="item_head">
+											<h4 class="item_title mb-0">Infiniti Q50 2018</h4>
+											<ul class="review_text ul_li_right clearfix">
+												<li class="text-right">
+													<strong>Super</strong>
+													<small>24+ avis</small>
+												</li>
+												<li><span class="bg_default_blue">4.8/5</span></li>
+											</ul>
+										</div>
+										<img src="https://images.unsplash.com/photo-1511527844068-006b95d162c2?ixid=MnwyMDkyMnwwfDF8c2VhcmNofDQzfHxjYXIlMjBzdXZ8ZW58MHx8fHwxNjMxNjg0ODkw&ixlib=rb-1.2.1q=85&fm=jpg&crop=faces&cs=srgb&w=600&h=450&fit=crop" alt="image_not_found">
+										<ul class="btns_group ul_li_center clearfix">
+											<li>
+												<span class="custom_btn btn_width bg_default_blue"><del>$800/Jours</del> $400/Jours</span>
+											</li>
+											<li>
+												<a href="./car.html" class="custom_btn btn_width bg_default_red text-uppercase">Réserver cette voiture <img src="assets/images/icons/icon_01.png" alt="icon_not_found"></a>
+											</li>
+										</ul>
+									</div>
+									<div class="item">
+										<div class="item_head">
+											<h4 class="item_title mb-0">Infiniti Q50 2018</h4>
+											<ul class="review_text ul_li_right clearfix">
+												<li class="text-right">
+													<strong>Super</strong>
+													<small>24+ avis</small>
+												</li>
+												<li><span class="bg_default_blue">4.8/5</span></li>
+											</ul>
+										</div>
+										<img src="assets/images/gallery/img_07.jpg" alt="image_not_found">
+										<ul class="btns_group ul_li_center clearfix">
+											<li>
+												<span class="custom_btn btn_width bg_default_blue"><del>$800/Jours</del> $400/Jours</span>
+											</li>
+											<li>
+												<a href="./car.html" class="custom_btn btn_width bg_default_red text-uppercase">Réserver cette voiture <img src="assets/images/icons/icon_01.png" alt="icon_not_found"></a>
+											</li>
+										</ul>
+									</div>
+									<div class="item">
+										<div class="item_head">
+											<h4 class="item_title mb-0">Infiniti Q50 2018</h4>
+											<ul class="review_text ul_li_right clearfix">
+												<li class="text-right">
+													<strong>Super</strong>
+													<small>24+ avis</small>
+												</li>
+												<li><span class="bg_default_blue">4.8/5</span></li>
+											</ul>
+										</div>
+										<img src="assets/images/gallery/img_07.jpg" alt="image_not_found">
+										<ul class="btns_group ul_li_center clearfix">
+											<li>
+												<span class="custom_btn btn_width bg_default_blue"><del>$800/Jours</del> $400/Jours</span>
+											</li>
+											<li>
+												<a href="#!" class="custom_btn btn_width bg_default_red text-uppercase">Réserver cette voiture <img src="assets/images/icons/icon_01.png" alt="icon_not_found"></a>
+											</li>
+										</ul>
+									</div>
+									<div class="item">
+										<div class="item_head">
+											<h4 class="item_title mb-0">Infiniti Q50 2018</h4>
+											<ul class="review_text ul_li_right clearfix">
+												<li class="text-right">
+													<strong>Super</strong>
+													<small>24+ avis</small>
+												</li>
+												<li><span class="bg_default_blue">4.8/5</span></li>
+											</ul>
+										</div>
+										<img src="assets/images/gallery/img_07.jpg" alt="image_not_found">
+										<ul class="btns_group ul_li_center clearfix">
+											<li>
+												<span class="custom_btn btn_width bg_default_blue"><del>$800/Jours</del> $400/Jours</span>
+											</li>
+											<li>
+												<a href="#!" class="custom_btn btn_width bg_default_red text-uppercase">Réserver cette voiture <img src="assets/images/icons/icon_01.png" alt="icon_not_found"></a>
+											</li>
+										</ul>
+									</div>
+									<div class="item">
+										<div class="item_head">
+											<h4 class="item_title mb-0">Infiniti Q50 2018</h4>
+											<ul class="review_text ul_li_right clearfix">
+												<li class="text-right">
+													<strong>Super</strong>
+													<small>24+ avis</small>
+												</li>
+												<li><span class="bg_default_blue">4.8/5</span></li>
+											</ul>
+										</div>
+										<img src="assets/images/gallery/img_07.jpg" alt="image_not_found">
+										<ul class="btns_group ul_li_center clearfix">
+											<li>
+												<span class="custom_btn btn_width bg_default_blue"><del>$800/Jours</del> $400/Jours</span>
+											</li>
+											<li>
+												<a href="#!" class="custom_btn btn_width bg_default_red text-uppercase">Réserver cette voiture <img src="assets/images/icons/icon_01.png" alt="icon_not_found"></a>
+											</li>
+										</ul>
+									</div>	
+									<div class="item">
+										<div class="item_head">
+											<h4 class="item_title mb-0">Infiniti Q50 2018</h4>
+											<ul class="review_text ul_li_right clearfix">
+												<li class="text-right">
+													<strong>Super</strong>
+													<small>24+ avis</small>
+												</li>
+												<li><span class="bg_default_blue">4.8/5</span></li>
+											</ul>
+										</div>
+										<img src="assets/images/gallery/img_07.jpg" alt="image_not_found">
+										<ul class="btns_group ul_li_center clearfix">
+											<li>
+												<span class="custom_btn btn_width bg_default_blue"><del>$800/Jours</del> $400/Jours</span>
+											</li>
+											<li>
+												<a href="#!" class="custom_btn btn_width bg_default_red text-uppercase">Réserver cette voiture <img src="assets/images/icons/icon_01.png" alt="icon_not_found"></a>
+											</li>
+										</ul>
+									</div>
+								<div class="thumbnail_carousel_nav">
+									<div class="item">
+										<img src="assets/images/gallery/child_01.jpg" alt="image_not_found">
+									</div>
+									<div class="item">
+										<img src="assets/images/gallery/child_02.jpg" alt="image_not_found">
+									</div>
+									<div class="item">
+										<img src="assets/images/gallery/child_03.jpg" alt="image_not_found">
+									</div>
+									<div class="item">
+										<img src="assets/images/gallery/child_04.jpg" alt="image_not_found">
+									</div>
+									<div class="item">
+										<img src="assets/images/gallery/child_01.jpg" alt="image_not_found">
+									</div>
+									<div class="item">
+										<img src="assets/images/gallery/child_02.jpg" alt="image_not_found">
+									</div>
+								</div>
+							</div>
+
+							<div class="car_choose_content">
+								<ul class="info_list ul_li_block mb_15 clearfix">
+									<li><strong>Passagers:</strong> 4</li>
+									<li><strong>Valise:</strong> Largeur 1, petits 2</li>
+									<li><strong>Porte:</strong> 2</li>
+									<li><strong>Moteur:</strong> 3.9L V8 32V GDI DOHC Twin Turbo</li>
+									<li><strong>Type de carburant:</strong> Essence, super sans plomb</li>
+									<li><strong>Options:</strong>Régulateur de vitesse, Lecteur MP3, Climatisation automatique, Wifi, Navigation GPS</li>
+								</ul>
+								<div>
+									<a class="terms_condition" href="#!"><i class="fas fa-info-circle mr-1"></i> Termes et conditions</a>
+								</div>
+
+								<hr>
+
+								<div class="rent_details_info">
+									<h4 class="list_title">Détails du loyer :</h4>
+									<div class="row">
+										<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+											<ul class="info_list ul_li_block mb_15 clearfix">
+												<li><i class="fas fa-id-card"></i> Garantie de paiement</li>
+												<li><i class="fas fa-business-time"></i>Protégez votre location</li>
+												<li><i class="fas fa-business-time"></i> Réception par e-mail</li>
+											</ul>
+										</div>
+
+										<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+											<ul class="info_list ul_li_block mb_15 clearfix">
+												<li><i class="fas fa-user-friends"></i>Partage de voiture</li>
+												<li><i class="fas fa-language"></i> Prise en charge multilingue</li>
+												<li><i class="fas fa-money-bill"></i>Options de paiement</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+
+								<hr data-aos="fade-up" data-aos-delay="100">
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+			<!-- details_section - end
+			================================================== -->
+
+		</main>
+		<!-- main body - end
+		================================================== -->
+
+
+		<hr class="m-0" data-aos="fade-up" data-aos-delay="100">
+		<!-- footer_section - start
+		================================================== -->
+		<footer class="footer_section clearfix">
+			<div class="footer_bottom text-white clearfix" data-bg-color="#000C21">
+				<div class="container">
+					<div class="row align-items-center justify-content-lg-between">
+						<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+							<p class="copyright_text mb-0">Copyright © 2022. Just Move</p>
+						</div>
+
+						<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+							<ul class="primary_social_links ul_li_right clearfix">
+								<li><a href="#!"><i class="fab fa-facebook-f"></i></a></li>
+								<li><a href="#!"><i class="fab fa-instagram"></i></a></li>
+								<li><a href="#!"><i class="fab fa-twitter"></i></a></li>
+								<li><a href="#!"><i class="fab fa-youtube"></i></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- footer_section - end
+		================================================== -->
+
+		
+		<!-- fraimwork - jquery include -->
+		<script src="assets/js/jquery-3.5.1.min.js"></script>
+		<script src="assets/js/popper.min.js"></script>
+		<script src="assets/js/bootstrap.min.js"></script>
+
+		<!-- animation - jquery include -->
+		<script src="assets/js/aos.js"></script>
+		<script src="assets/js/parallaxie.js"></script>
+
+		<!-- carousel - jquery include -->
+		<script src="assets/js/slick.min.js"></script>
+
+		<!-- popup - jquery include -->
+		<script src="assets/js/magnific-popup.min.js"></script>
+
+		<!-- select ontions - jquery include -->
+		<script src="assets/js/nice-select.min.js"></script>
+
+		<!-- isotope - jquery include -->
+        <script src="assets/js/isotope.pkgd.js"></script>
+        <script src="assets/js/imagesloaded.pkgd.min.js"></script>
+        <script src="assets/js/masonry.pkgd.min.js"></script>
+
+		<!-- google map - jquery include -->
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDk2HrmqE4sWSei0XdKGbOMOHN3Mm2Bf-M&ver=2.1.6"></script>
+        <script src="assets/js/gmaps.min.js"></script>
+
+		<!-- pricing range - jquery include -->
+		<script src="assets/js/jquery-ui.js"></script>
+
+		<!-- counter - jquery include -->
+		<script src="assets/js/waypoint.js"></script>
+		<script src="assets/js/counterup.min.js"></script>
+
+		<!-- contact form - jquery include -->
+        <script src="assets/js/validate.js"></script>
+
+		<!-- mobile menu - jquery include -->
+        <script src="assets/js/mCustomScrollbar.js"></script>
+
+		<!-- custom - jquery include -->
+		<script src="assets/js/custom.js"></script>
+
+		
+	</body>
+</html>
